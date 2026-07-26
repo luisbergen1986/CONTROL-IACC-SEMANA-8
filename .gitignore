@@ -1,0 +1,14 @@
+# Dependencias
+vendor/
+node_modules/
+
+# Configuracion local
+.env
+config.local.php
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

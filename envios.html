@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion de Envios - Tienda Online</title>
+<link rel="stylesheet" href="css/envios.css">
+</head>
+<body>
+<header class="cabecera">
+    <h1>Panel de Gestion de Envios</h1>
+</header>
+
+<main class="contenedor">
+    <section class="filtros">
+        <label for="filtroEstado">Filtrar por estado:</label>
+        <select id="filtroEstado">
+            <option value="">Todos</option>
+            <option value="pendiente">Pendiente</option>
+            <option value="en_transito">En transito</option>
+            <option value="entregado">Entregado</option>
+            <option value="devuelto">Devuelto</option>
+        </select>
+    </section>
+
+    <section class="tabla-envios">
+        <table id="tablaEnvios">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Pedido</th>
+                    <th>Transportista</th>
+                    <th>N. Seguimiento</th>
+                    <th>Destino</th>
+                    <th>Estado</th>
+                    <th>Actualizar</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaEnvios">
+                <!-- Las filas se generan dinamicamente desde envios.js -->
+            </tbody>
+        </table>
+        <p id="mensajeEstado" class="mensaje-estado"></p>
+    </section>
+</main>
+
+<script src="js/envios.js"></script>
+</body>
+</html>
